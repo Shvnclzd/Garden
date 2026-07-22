@@ -31,13 +31,13 @@ configuration:
         highlight: rgba(226, 50, 49, 0.12)
         textHighlight: "#E2323188"
       darkMode:
-        light: "#17100E"        # near-black base (gun panel / skull bg)
-        lightgray: "#2A1613"    # slightly lifted surface
-        gray: "#5C3330"         # dusty red-brown borders
-        darkgray: "#C9938E"     # muted secondary text
-        dark: "#F5F1D0"         # cream, primary text — from the neon "BLAH" lettering
-        secondary: "#E23231"    # blood red — main accent
-        tertiary: "#382EA1"     # violet, pulled from a shadow in the nude-figure panel
+        light: "#17100E"       
+        lightgray: "#2A1613"   
+        gray: "#5C3330"        
+        darkgray: "#C9938E"    
+        dark: "#F5F1D0"         
+        secondary: "#E23231"   
+        tertiary: "#382EA1"     
         highlight: rgba(226, 50, 49, 0.15)
 plugins:
   - source: github:quartz-community/created-modified-date
