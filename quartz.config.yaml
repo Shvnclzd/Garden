@@ -16,30 +16,30 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Schibsted Grotesk
+      header: Inter
       body: Source Sans Pro
       code: IBM Plex Mono
     colors:
       lightMode:
-        light: "#F0DCCA"
-        lightgray: "#E2DECA"
-        gray: "#8D9F87"
-        darkgray: "#6F9283"
-        dark: "#696D7D"
-        secondary: "#696D7D"
-        tertiary: "#6F9283"
-        highlight: rgba(141, 159, 135, 0.15)
-        textHighlight: "#F0DCCA88"
+        light: "#EBEAEA"
+        lightgray: "#DCD9DA"    
+        gray: "#56494E"
+        darkgray: "#A62639"
+        dark: "#511C29"
+        secondary: "#A62639"
+        tertiary: "#DB324D"
+        highlight: rgba(166, 38, 57, 0.10)
+        textHighlight: "#DB324D66"
       darkMode:
-        light: "#696D7D"
-        lightgray: "#6F9283"
-        gray: "#8D9F87"
-        darkgray: "#E2DECA"
-        dark: "#F0DCCA"
-        secondary: "#8D9F87"
-        tertiary: "#6F9283"
-        highlight: rgba(141, 159, 135, 0.15)
-        textHighlight: "#8D9F8788"
+        light: "#511C29"     
+        lightgray: "#56494E"    
+        gray: "#A62639"       
+        darkgray: "rgba(235, 234, 234, 0.7)"   
+        dark: "#EBEAEA"      
+        secondary: "#DB324D"    
+        tertiary: "#A62639"    
+        highlight: rgba(166, 38, 57, 0.15)
+        textHighlight: "#DB324D88"
 plugins:
   - source: github:quartz-community/created-modified-date
     enabled: true
@@ -154,6 +154,10 @@ plugins:
     enabled: true
   - source: github:quartz-community/explorer
     enabled: true
+    options:
+      title: Folders
+      folderClickBehavior: collapse
+      folderDefaultState: collapsed
     layout:
       position: left
       priority: 50
