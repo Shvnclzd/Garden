@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
-  pageTitleSuffix: ""
+  pageTitle: Shan's Basement
+  pageTitleSuffix: "Basement"
   enableSPA: true
   enablePopovers: true
   analytics:
@@ -21,25 +21,24 @@ configuration:
       code: IBM Plex Mono
     colors:
       lightMode:
-        light: "#faf8f8"
-        lightgray: "#e5e5e5"
-        gray: "#b8b8b8"
-        darkgray: "#4e4e4e"
-        dark: "#2b2b2b"
-        secondary: "#284b63"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#fff23688"
+        light: "#F5F1D0"
+        lightgray: "#EAE0C0"
+        gray: "#C9938E"
+        darkgray: "#5C3330"
+        dark: "#24100D"
+        secondary: "#E23231"
+        tertiary: "#382EA1"
+        highlight: rgba(226, 50, 49, 0.12)
+        textHighlight: "#E2323188"
       darkMode:
-        light: "#161618"
-        lightgray: "#393639"
-        gray: "#646464"
-        darkgray: "#d4d4d4"
-        dark: "#ebebec"
-        secondary: "#7b97aa"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#b3aa0288"
+        light: "#17100E"        # near-black base (gun panel / skull bg)
+        lightgray: "#2A1613"    # slightly lifted surface
+        gray: "#5C3330"         # dusty red-brown borders
+        darkgray: "#C9938E"     # muted secondary text
+        dark: "#F5F1D0"         # cream, primary text — from the neon "BLAH" lettering
+        secondary: "#E23231"    # blood red — main accent
+        tertiary: "#382EA1"     # violet, pulled from a shadow in the nude-figure panel
+        highlight: rgba(226, 50, 49, 0.15)
 plugins:
   - source: github:quartz-community/created-modified-date
     enabled: true
@@ -201,12 +200,7 @@ plugins:
       position: left
       priority: 30
       group: toolbar
-  - source: github:quartz-community/reader-mode
-    enabled: true
-    layout:
-      position: left
-      priority: 35
-      group: toolbar
+
   - source: github:quartz-community/breadcrumbs
     enabled: true
     layout:
@@ -258,13 +252,7 @@ plugins:
       position: beforeBody
       priority: 15
       display: all
-  - source:
-      name: quartz-themes
-      repo: github:saberzero1/quartz-themes
-      subdir: plugin
-    enabled: true
-    options:
-      theme: default
+
   - source: github:quartz-community/obsidian-plugin-excalidraw
     enabled: true
     options:
