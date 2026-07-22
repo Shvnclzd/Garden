@@ -1,0 +1,5 @@
+views:
+  - type: cards
+    name: Table
+    image: file.file
+    cardSize: 160
